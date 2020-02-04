@@ -1,0 +1,48 @@
+tools:
+  nodejs:
+    - 10.15.3
+  npm:
+    - 6.4.1
+    
+triggers:
+    - manual:
+        name: Build and Deploy
+        call: build_and_deploy
+        
+envs:
+  global:
+    variables:
+      oneops.organization: CP 
+      oneops.assembly: oar-backorder-dashboard-service	
+      oneops.environment: health-monitor-prod
+      oneops.platform: health-monitor-frontend
+
+
+flows:
+  default:
+    - call: build_and_deploy
+    
+  install: |
+    (name npm install)
+    #!/bin/bash
+    echo "npm install"
+    npm install
+  build_and_deploy:
+     - npm version $versiontype -m 'Release %s'
+     - exposeVars(package.json)
+     - echo "Publishing ${package.version}"
+     - npm version major -m 'Release %s'
+     - git push --set-upstream origin master
+     - git status && git push --follow-tags
+     - npm install
+     - npm publish 
+     - npm info
+     - call: deploy_to_oneops
+
+  build:
+    - npm start
+
+  deploy_to_oneops:
+    - oneops.componentUpdate(organization = CP , assembly = oar-backorder-dashboard-service , environment = health-monitor-prod , platform = health-monitor-frontend , component = node-module, attributes = { module_version = ${package.version} })
+    - oneops.transitionVariableUpdate(platform = '${platform}', component = 'node-module')
+    - oneops.environmentCommitAndDeploy()
