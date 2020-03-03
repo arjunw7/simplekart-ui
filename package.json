@@ -1,6 +1,6 @@
 {
     "name": "oarGroceryTools",
-    "version": "142.0.0",
+    "version": "143.0.0",
     "description": "OAR GR Utils",
     "main": "server.js",
     "scripts": {
