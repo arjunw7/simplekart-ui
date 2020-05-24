@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1fe6773.chunk.css",
-    "main.js": "/static/js/main.d33401bf.chunk.js",
-    "main.js.map": "/static/js/main.d33401bf.chunk.js.map",
+    "main.css": "/static/css/main.d3cf0f17.chunk.css",
+    "main.js": "/static/js/main.8ffc8123.chunk.js",
+    "main.js.map": "/static/js/main.8ffc8123.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/css/2.0605b2f0.chunk.css": "/static/css/2.0605b2f0.chunk.css",
-    "static/js/2.ba6ea1da.chunk.js": "/static/js/2.ba6ea1da.chunk.js",
-    "static/js/2.ba6ea1da.chunk.js.map": "/static/js/2.ba6ea1da.chunk.js.map",
+    "static/js/2.5e28b9ef.chunk.js": "/static/js/2.5e28b9ef.chunk.js",
+    "static/js/2.5e28b9ef.chunk.js.map": "/static/js/2.5e28b9ef.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ef96aa89c65f95fb45e6b0303fc0fcbb.js": "/precache-manifest.ef96aa89c65f95fb45e6b0303fc0fcbb.js",
+    "precache-manifest.01e3fd5946486d177e10f80e2ee13b8f.js": "/precache-manifest.01e3fd5946486d177e10f80e2ee13b8f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.0605b2f0.chunk.css.map": "/static/css/2.0605b2f0.chunk.css.map",
-    "static/css/main.b1fe6773.chunk.css.map": "/static/css/main.b1fe6773.chunk.css.map",
+    "static/css/main.d3cf0f17.chunk.css.map": "/static/css/main.d3cf0f17.chunk.css.map",
     "static/media/certified.png": "/static/media/certified.f622479d.png",
     "static/media/clothing.png": "/static/media/clothing.2368348d.png",
     "static/media/cover.jpg": "/static/media/cover.e3d0f54f.jpg",
@@ -22,12 +22,12 @@
     "static/media/icon3.png": "/static/media/icon3.18655ed3.png",
     "static/media/icon4.png": "/static/media/icon4.d0056f85.png",
     "static/media/liquid.png": "/static/media/liquid.6eea3e69.png",
+    "static/media/logo.png": "/static/media/logo.7395fd96.png",
     "static/media/masks.png": "/static/media/masks.3faf7163.png",
     "static/media/medicalMask.png": "/static/media/medicalMask.9d92a374.png",
     "static/media/paper.png": "/static/media/paper.53761934.png",
     "static/media/ppe.png": "/static/media/ppe.b3f51b0a.png",
     "static/media/salesman.png": "/static/media/salesman.c3687974.png",
-    "static/media/sanitizer.png": "/static/media/sanitizer.c5840695.png",
-    "static/media/simplecart.png": "/static/media/simplecart.69702f56.png"
+    "static/media/sanitizer.png": "/static/media/sanitizer.c5840695.png"
   }
 }
